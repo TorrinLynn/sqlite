@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Music",
+            "database": "${workspaceFolder:sqlite}/src/data/music.db"
+        }
+    ]
+}

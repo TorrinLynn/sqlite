@@ -24,5 +24,18 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-source-sqlite`,
+      options: {
+        fileName: "./src/data/music.db",
+        queries: [
+          {
+            statement: "SELECT * FROM band",
+            idFieldName: 'uuid',
+            name: 'bands',
+          },
+        ]
+      }
+    },
   ],
 };
